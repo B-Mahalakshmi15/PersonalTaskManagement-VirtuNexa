@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="avatar">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.0petdFlwvJs_bDZzovF3PQHaIu&pid=Api&P=0&h=180" alt="User Avatar"> <!-- Change this URL to your avatar -->
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#tasks" class="nav-link" id="task-nav">Tasks</a></li>
+        <li><a href="#messages" class="nav-link" id="message-nav">Messages</a></li>
+        <li><a href="#notifications" class="nav-link" id="notification-nav">Notifications</a></li>
+        <li><a href="#profile" class="nav-link">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tasks" class="section">
+      <h2>Tasks</h2>
+      <div id="task-list" class="toggle-content">
+        <ul class="task-list">
+          <li class="task-item"><strong style= color:black > 1. </strong>Complete Portfolio Website</li>
+          <li class="task-item"><strong style= color:black > 2. </strong>Develop Chat Application</li>
+          <li class="task-item"><strong style= color:black > 3. </strong>Prepare for Hackathon</li>
+          <li class="task-item"><strong style= color:black > 4. </strong>prepare for your semester exam</li>
+          <li class="task-item"><strong style= color:black > 5. </strong>upcoming events</li>
+          <li class="task-item"><strong style= color:black > 6. </strong>complete your assignments</li>
+          <li class="task-item"><strong style= color:black > 7. </strong>try to complete the task provided in internship</li>
+          <li class="task-item"><strong style= color:black > 8. </strong>complete the pending drawing</li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section id="messages" class="section">
+      <h2>Messages</h2>
+      <div id="message-list" class="toggle-content">
+        <ul class="message-list">
+          <li class="message-item"><strong style= color:black > John: </strong>Hey, I wanted to discuss the project details. Let's catch up tomorrow!</li>
+          <li class="message-item"><strong style= color:black> Amala: </strong>Great job on the last presentation. Can we talk about the next steps?</li>
+          <li class="message-item"><strong style= color:black> VirtuNexa Workspace:</strong>Reminder: The team meeting is scheduled for 3 PM today.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="notifications" class="section">
+      <h2>Notifications</h2>
+      <div id="notification-list" class="toggle-content">
+        <ul class="notification-list">
+          <li class="notification-item">You have a new comment on your portfolio.</li>
+          <li class="notification-item">Your hackathon team has been confirmed.</li>
+          <li class="notification-item">A new job opportunity has been posted in your field.</li>
+          <li class="notification-item">new notifications are there</li>
+          <li class="notification-item">2 persons notice you in LinkedIn</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="profile" class="section">
+      <h2>Profile</h2>
+      <p>Manage your profile and settings here.</p>
+    </section>
+
+    <div class="floating-btn">
+      <a href="#profile">+</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Personalized Dashboard</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7f7f7;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc5c65;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color:#fc5c65;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a:active {
+    transform: scale(0.95);
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  section {
+    padding: 3rem;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #fc5c65;
+    margin-bottom: 1rem;
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fc5c65;
+    color: white;
+  }
+  
+  .section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-link {
+    position: relative;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .nav-link:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  
+  .nav-link:hover:before {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .nav-link:hover {
+    color: #0e0c0c;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+    .section {
+      width: 90%;
+    }
+  }
+  
+  .floating-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #fc5c65;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .floating-btn a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translateY(-2px);
+  }
+  
+  .floating-btn:hover {
+    background-color:#fc5c65;
+    transform: scale(1.1);
+  }
+  
+  .floating-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Task, Message, Notification Styles */
+  .toggle-content {
+    display: none;
+  }
+  
+  .task-list, .message-list, .notification-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item, .message-item, .notification-item {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .task-item:hover, .message-item:hover, .notification-item:hover {
+    transform: translateY(-5px);
+    background-color: #fc5c65;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .task-item:hover::after, .message-item:hover::after, .notification-item:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .task-name, .notification-message {
+    font-weight: 600;
+  }
+  
+  .task-date, .notification-time {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .message-item strong {
+    color: #fc5c65;
+  }
+  
+  
